@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './widgets/title_with_name.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
@@ -6,13 +7,7 @@ class CustomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Welcome back'),
-          Text('John Doe'),
-        ],
-      ),
+      title: const TitleWithName(),
     );
   }
 }
