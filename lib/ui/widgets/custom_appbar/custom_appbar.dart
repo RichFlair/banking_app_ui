@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './widgets/title_with_name.dart';
+import '../widgets/title_with_name.dart';
 import './widgets/profile_picture.dart';
 import './widgets/notifications_icon.dart';
 
