@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import './widgets/title_with_name.dart';
+import './widgets/profile_picture.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
@@ -8,6 +10,9 @@ class CustomAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: const TitleWithName(),
+      actions: [
+        ProfilePicture(),
+      ],
     );
   }
 }

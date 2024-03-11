@@ -15,7 +15,7 @@ class TitleWithName extends StatelessWidget {
         ),
         Text(
           'John Doe',
-          style: context.textTheme.bodyMedium!.copyWith(
+          style: context.textTheme.titleMedium!.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
