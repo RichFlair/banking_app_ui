@@ -25,7 +25,7 @@ class NotificationsIcon extends StatelessWidget {
               color: Colors.red,
               border: Border.all(
                 color: Colors.white,
-                width: 1,
+                width: 2,
               ),
             ),
           ),
