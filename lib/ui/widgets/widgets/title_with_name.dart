@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
+import './/core/extensions.dart';
 
 class TitleWithName extends StatelessWidget {
   const TitleWithName({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Welcome back'),
-        Text('John Doe'),
+        Text(
+          'Welcome back',
+          style: context.textTheme.bodySmall,
+        ),
+        Text(
+          'John Doe',
+          style: context.textTheme.bodyMedium!.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ],
     );
   }
