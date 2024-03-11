@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '/ui/widgets/balance_card/widgets/balance_and_subtitle.dart';
 import '/ui/widgets/balance_card/widgets/balance_and_date.dart';
 import '/core/constants.dart';
 
@@ -8,7 +10,7 @@ class BalanceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       margin: const EdgeInsets.all(16),
       height: 200,
       width: double.infinity,
@@ -24,9 +26,18 @@ class BalanceCard extends StatelessWidget {
         ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          BalanceAndDate(),
+          const BalanceAndDate(),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const BalanceAndSubtitle(),
+              Image.asset('assets/icons/paypal-logo.png'),
+            ],
+          ),
         ],
       ),
     );
