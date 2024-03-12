@@ -9,7 +9,6 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final transaction = transactionsList.first;
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -21,7 +20,9 @@ class TransactionList extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          TransactionItem(transaction: transaction),
+          ...transactionsList.map(
+            (transaction) => TransactionItem(transaction: transaction),
+          )
         ],
       ),
     );
