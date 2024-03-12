@@ -20,9 +20,11 @@ class TransactionList extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          ...transactionsList.map(
-            (transaction) => TransactionItem(transaction: transaction),
-          )
+          ...transactionsList
+              .map(
+                (transaction) => TransactionItem(transaction: transaction),
+              )
+              .toList(),
         ],
       ),
     );
