@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_flutter_ui/ui/widgets/transactions/widgets/transaction_amount_and_date.dart';
 import '/ui/widgets/transactions/widgets/transaction_icon.dart';
 import '/ui/widgets/transactions/widgets/transaction_name_and_label.dart';
 import '/model/transaction_model.dart';
@@ -20,6 +21,8 @@ class TransactionItem extends StatelessWidget {
           width: 5,
         ),
         TransactionNameAndLabel(transaction: transaction),
+        const Spacer(),
+        TransactionAmountAndDate(transaction: transaction),
       ],
     );
   }

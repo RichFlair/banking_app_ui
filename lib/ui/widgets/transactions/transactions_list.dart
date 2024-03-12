@@ -17,7 +17,7 @@ class TransactionList extends StatelessWidget {
         children: [
           Text(
             'Recent transactions',
-            style: context.textTheme.labelMedium!.copyWith(
+            style: context.textTheme.labelLarge!.copyWith(
               fontWeight: FontWeight.bold,
             ),
           ),
