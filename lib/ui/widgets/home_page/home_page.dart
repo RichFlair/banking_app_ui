@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_flutter_ui/ui/widgets/home_page/widgets/bottom_navigation_bar.dart';
 import '/ui/widgets/transactions/transactions_list.dart';
 import '/ui/widgets/balance_card/balance_card.dart';
 import '/ui/widgets/custom_appbar/custom_appbar.dart';
@@ -20,6 +21,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: const HomePageBottomNavigationBar(),
     );
   }
 }
