@@ -7,7 +7,7 @@ class ProfilePicture extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
-      child: Image.asset('assets/icons/profile.png'),
+      child: Image.asset('assets/icons/user-profile.png'),
     );
   }
 }

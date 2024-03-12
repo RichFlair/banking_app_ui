@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/core/constants.dart';
 
 class HomePageBottomNavigationBar extends StatelessWidget {
   const HomePageBottomNavigationBar({super.key});
@@ -6,6 +7,7 @@ class HomePageBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      selectedItemColor: AppColors.darkBlue,
       type: BottomNavigationBarType.fixed,
       items: const [
         BottomNavigationBarItem(
