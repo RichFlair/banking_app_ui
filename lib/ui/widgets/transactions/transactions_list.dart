@@ -10,16 +10,20 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final transaction = transactionsList.first;
-    return Column(
-      children: [
-        Text(
-          'Recent transactions',
-          style: context.textTheme.labelMedium!.copyWith(
-            fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Recent transactions',
+            style: context.textTheme.labelMedium!.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
-        TransactionItem(transaction: transaction),
-      ],
+          TransactionItem(transaction: transaction),
+        ],
+      ),
     );
   }
 }
