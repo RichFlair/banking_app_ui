@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:random_flutter_ui/core/extensions.dart';
-import 'package:random_flutter_ui/model/transaction_model.dart';
+import '/core/extensions.dart';
+import '/model/transaction_model.dart';
 
 class TransactionAmountAndDate extends StatelessWidget {
   final Transaction transaction;

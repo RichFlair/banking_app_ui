@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:random_flutter_ui/data/dummy_data.dart';
+import '/data/dummy_data.dart';
 
 import '/core/extensions.dart';
 import '/ui/widgets/transactions/widgets/transaction_item.dart';

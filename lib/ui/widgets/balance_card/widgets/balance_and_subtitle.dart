@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:random_flutter_ui/core/extensions.dart';
+import '/core/extensions.dart';
 
 class BalanceAndSubtitle extends StatelessWidget {
   const BalanceAndSubtitle({super.key});

@@ -14,7 +14,7 @@ class TitleWithName extends StatelessWidget {
           style: context.textTheme.bodySmall,
         ),
         Text(
-          'John Doe',
+          'Andrew Marfo',
           style: context.textTheme.titleMedium!.copyWith(
             fontWeight: FontWeight.bold,
           ),
