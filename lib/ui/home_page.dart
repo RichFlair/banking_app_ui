@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/ui/widgets/transactions/transactions_list.dart';
 import '/ui/widgets/balance_card/balance_card.dart';
 import '/ui/widgets/custom_appbar/custom_appbar.dart';
 
@@ -11,8 +12,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const CustomAppbar(),
       ),
-      body: Column(
-        children: [BalanceCard()],
+      body: const Column(
+        children: [
+          BalanceCard(),
+          Expanded(
+            child: TransactionList(),
+          ),
+        ],
       ),
     );
   }

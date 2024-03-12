@@ -62,6 +62,11 @@ flutter:
   assets:
     - assets/icons/profile.png
     - assets/icons/paypal-logo.png
+    - assets/icons/briefcase.png
+    - assets/icons/dropbox.png
+    - assets/icons/fastfood.png
+    - assets/icons/musical-notes.png
+    - assets/icons/youtube.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
